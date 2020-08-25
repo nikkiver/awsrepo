@@ -1,6 +1,7 @@
 from app import  application
+from flask import  render_template
 
 
 @application.route('/' , methods=['GET'])
 def index():
-    return "Index page rendered" , 200
+    return render_template('index.html')
